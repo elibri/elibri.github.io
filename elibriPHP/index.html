@@ -93,6 +93,16 @@ Wprowadzenie</h1>
 <p><a href="https://www.elibri.com.pl">eLibri</a> jest systemem stworzonym dla wydawnictw, które mogą za jego pośrednictwem udostępniać dane bibliograficzne wydawanych przez siebie książek. Niniejsza biblioteka jest implementacją API udokumentowanego <a href="https://www.elibri.com.pl/doc/api">tutaj</a>.</p>
 <h1><a class="anchor" id="changes"></a>
 Lista zmian:</h1>
+<h2><a class="anchor" id="c20092023"></a>
+20 wrześnie 2023 roku</h2>
+<ul>
+<li>usunięcie reszty kodu obsługującego dodatkowe tagi, spoza ONIX-a.</li>
+</ul>
+<h2><a class="anchor" id="c27082023"></a>
+27 sierpnia 2023 roku</h2>
+<ul>
+<li>dodanie nowego wyjątku, <code><a class="el" href="classElibriDataAPITooManyRequestsException.html" title="Wyjątek - Przekroczony limit zapytań">ElibriDataAPITooManyRequestsException</a></code>, informującego o przekroczeniu dopuszczalnego dzienniego limitu requestów</li>
+</ul>
 <h2><a class="anchor" id="c05022023"></a>
 5 luty 2023 roku</h2>
 <ul>
@@ -175,7 +185,7 @@ Przykład 1</h2>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">?&gt;</div>
-<div class="ttc" id="aclassElibriAPI_html"><div class="ttname"><a href="classElibriAPI.html">ElibriAPI</a></div><div class="ttdoc">ElibriAPI abstrahuje wykorzystanie API udostępniane przez eLibri.</div><div class="ttdef"><b>Definition:</b> elibriAPI.php:94</div></div>
+<div class="ttc" id="aclassElibriAPI_html"><div class="ttname"><a href="classElibriAPI.html">ElibriAPI</a></div><div class="ttdoc">ElibriAPI abstrahuje wykorzystanie API udostępniane przez eLibri.</div><div class="ttdef"><b>Definition:</b> elibriAPI.php:101</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="example2"></a>
 Przykład 2</h2>
 <p>Typowe użycie API eLibri to regularne pobieranie nowych danych - w kolejce meta znajdą się zarówno nowododane produkty, jak i te, których dane się zmieniły. Wiadomość&#160;otrzymana z serwera to instancja <a class="el" href="classElibriOnixMessage.html" title="Klasa abstrahująca wiadomość ONIX.">ElibriOnixMessage</a>, która zawiera listę produktów - <a class="el" href="classElibriProduct.html" title="Reprezentacja produktu.">ElibriProduct</a>. Po Twojej stronie jest wykrycie, które dane się zmieniły. Żeby jednak ułatwić to zadanie, udostępniamy przy linkach, tekstach oraz autorach ich wewnętrzne ID w bazie eLibri. Pozwala to łatwiej sprawdzić, które dane uległy zmianie.</p>
