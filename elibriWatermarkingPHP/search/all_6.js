@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['get_5fsupplier_16',['get_supplier',['../classElibriWatermarkingClient.html#aa2ba99c2b2fc47181373678ac31a4077',1,'ElibriWatermarkingClient']]]
+  ['soon_5favailable_5ffiles_16',['soon_available_files',['../classElibriWatermarkingClient.html#a30683d237fbf5ec5381871c83682d121',1,'ElibriWatermarkingClient']]],
+  ['soon_5funavailable_5ffiles_17',['soon_unavailable_files',['../classElibriWatermarkingClient.html#afafdf8a68bee4c40c4273abd68627d8b',1,'ElibriWatermarkingClient']]]
 ];

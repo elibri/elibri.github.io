@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deliver_36',['deliver',['../classElibriWatermarkingClient.html#a71b2829ff44480bf0bcb368832cd903c',1,'ElibriWatermarkingClient']]]
+  ['retry_34',['retry',['../classElibriWatermarkingClient.html#ad6e2307695a64ddfe3923ec6ed45d675',1,'ElibriWatermarkingClient']]]
 ];
