@@ -86,9 +86,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:aa567fda2c6f1fa8ac552d3fef5e25175"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElibriWatermarkingClient.html#aa567fda2c6f1fa8ac552d3fef5e25175">__construct</a> ($token, $secret, $subdomains=NULL)</td></tr>
-<tr class="memdesc:aa567fda2c6f1fa8ac552d3fef5e25175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontruktor obiektu API.  <a href="classElibriWatermarkingClient.html#aa567fda2c6f1fa8ac552d3fef5e25175">Więcej...</a><br /></td></tr>
-<tr class="separator:aa567fda2c6f1fa8ac552d3fef5e25175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8211ba714534e66679af4541b8c80ce3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElibriWatermarkingClient.html#a8211ba714534e66679af4541b8c80ce3">__construct</a> ($token, $secret, $host=&quot;https://www.elibri.com.pl&quot;)</td></tr>
+<tr class="memdesc:a8211ba714534e66679af4541b8c80ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kontruktor obiektu API.  <a href="classElibriWatermarkingClient.html#a8211ba714534e66679af4541b8c80ce3">Więcej...</a><br /></td></tr>
+<tr class="separator:a8211ba714534e66679af4541b8c80ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a693358ab8be00b75659ac71e8ff5b2ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElibriWatermarkingClient.html#a693358ab8be00b75659ac71e8ff5b2ad">watermark</a> ($ident, $formats, $visible_watermark, $title_postfix, $customer_ip=NULL, $client_symbol=NULL)</td></tr>
 <tr class="memdesc:a693358ab8be00b75659ac71e8ff5b2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zlecaj watermarkowanie. Żeby skrócić maksymalnie oczekiwanie klienta na plik, podzieliliśmy cały proces watermarkingu na dwa etapy. Proponujemy, żeby zlecać watermarking tak wcześnie, jak to tylko możliwe (na przykład wtedy, gdy klient opuści koszyk, i poda swoje dane) eLibri rozpoczyna wtedy watermarkowanie książki, ale nie udostępnia jeszcze pliku sklepowi, ani nie rejestruje transakcji. Dopiero po dokonaniu płatności przez klienta należy wywołać metodę deliver, która to dostarczy plik do sklepu. Po umieszczeniu pliku na S3 nasz serwer łączy się z przekazanym przez Państwa URL-em (metoda POST), przekazując w parametrze trans_id identyfikator transakcji, która została ukończona.  <a href="classElibriWatermarkingClient.html#a693358ab8be00b75659ac71e8ff5b2ad">Więcej...</a><br /></td></tr>
 <tr class="separator:a693358ab8be00b75659ac71e8ff5b2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,8 +114,8 @@ Metody publiczne</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>ElibriAPI abstrahuje wykorzystanie API udostępniane przez eLibri. </p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a id="aa567fda2c6f1fa8ac552d3fef5e25175"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa567fda2c6f1fa8ac552d3fef5e25175">&#9670;&nbsp;</a></span>__construct()</h2>
+<a id="a8211ba714534e66679af4541b8c80ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8211ba714534e66679af4541b8c80ce3">&#9670;&nbsp;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +136,7 @@ Metody publiczne</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$subdomains</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>$host</em> = <code>&quot;https://www.elibri.com.pl&quot;</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
